@@ -11,7 +11,7 @@ public class Client {
 		CustomerServiceImpl service = null;
         AbstractApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
 		service = (CustomerServiceImpl) context.getBean("customerService");
-		System.out.println(service.fetchCustomer());
+		System.out.println(service.createCustomer());
 		context.close();
 	}
 }
